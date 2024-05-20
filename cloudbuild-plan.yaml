@@ -7,5 +7,10 @@ steps:
   - id: 'terraform plan'
     name: 'hashicorp/terraform:1.0.0'
     script: terraform plan
+    args:
+      - '-c'
+      - |
+        terraform plan -var-file=terrform.tfvars
+        
 logsBucket: 'gs://tf-code-log'
 
