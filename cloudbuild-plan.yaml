@@ -7,3 +7,5 @@ steps:
   - id: 'terraform plan'
     name: 'hashicorp/terraform:1.0.0'
     script: terraform plan
+logBuket: 'gs://tf-code-log'
+
